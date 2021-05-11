@@ -66,7 +66,7 @@ PureTaskList.defaultProps = {
 
 export default connect(
   ({ tasks }) => ({
-    task: tasks.filter(
+    tasks: tasks.filter(
       (t) => t.state === 'TASK_INBOX' || t.state === 'TASK_PINNED'
     ),
   }),
